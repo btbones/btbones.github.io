@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting…</title>
+<script>
+// Old root-level links (e.g. /flags.html) moved under /boyz/
+if (!location.pathname.startsWith('/boyz/')) {
+  location.replace('/boyz' + location.pathname + location.search + location.hash);
+}
+</script>
+</head>
+<body>
+<p>Page not found. <a href="/boyz/">Go to elizandbt.com/boyz</a></p>
+</body>
+</html>
